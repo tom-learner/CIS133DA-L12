@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- 
+      Author: Aidan Swisher 
+      Course: CIS133DA | Section: 11731 
+      Lesson: 12
+    -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessibility</title>
+    <meta name="author" content="Aidan Swisher">
+    <meta name="description" content="Accessibility statement and resources for making our website usable by all visitors.">
+    <meta name="keywords" content="accessibility, disabilities, POUR principles, inclusive design, web accessibility">
+    <link href="css/styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>Accessibility</h1>
+        <nav>
+            <a href="accessibility.html">Accessibility</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Our Commitment to Accessibility</h2>
+
+        <p>At Computer Systems Inc., we are committed to providing a fully accessible website for all visitors. We strive to meet the needs of users with diverse abilities by following accessibility guidelines and best practices to ensure equal access to our content and services.</p>
+
+        <!-- Fixed image path (ensure correct filename in your /images folder) -->
+        <img src="images/access-image.jpg" alt="Illustration representing accessibility and diverse abilities">
+
+        <h3>Web Users and Web Accessibility</h3>
+        <table>
+            <tr>
+                <th>Disability</th>
+                <th>Description</th>
+                <th>Common Barriers</th>
+                <th>Accessibility Principles to Apply</th>
+            </tr>
+            <tr>
+                <td>Auditory</td>
+                <td><!-- Add description here --></td>
+                <td><!-- Add barriers here --></td>
+                <td><!-- Add POUR principle and fix here --></td>
+            </tr>
+            <tr>
+                <td>Cognitive and Neurological</td>
+                <td><!-- Add description here --></td>
+                <td><!-- Add barriers here --></td>
+                <td><!-- Add POUR principle and fix here --></td>
+            </tr>
+            <tr>
+                <td>Physical</td>
+                <td><!-- Add description here --></td>
+                <td><!-- Add barriers here --></td>
+                <td><!-- Add POUR principle and fix here --></td>
+            </tr>
+            <tr>
+                <td>Speech</td>
+                <td><!-- Add description here --></td>
+                <td><!-- Add barriers here --></td>
+                <td><!-- Add POUR principle and fix here --></td>
+            </tr>
+            <tr>
+                <td>Visual</td>
+                <td><!-- Add description here --></td>
+                <td><!-- Add barriers here --></td>
+                <td><!-- Add POUR principle and fix here --></td>
+            </tr>
+        </table>
+
+        <h2>Survey</h2>
+        <form name="myForm" id="test" action="https://secure.riosalado.edu/cis-course-resources/postscript.aspx"
+            method="post">
+            <p>We'd love to hear from you regarding the accessibility of our website. If you'd like, please take
+                this brief survey and leave us your name and email address if you'd like us to get back in contact
+                with you.</p>
+
+            <h3>Feedback Type</h3>
+            <p>What type of feedback would you like to share? <em>Please select all that apply</em>:</p>
+            <input type="checkbox" name="Type" value="Suggestion"> Suggestion on how to improve accessibility on the
+            website<br>
+            <input type="checkbox" name="Type" value="Issue"> Issue with the accessibility of the website<br>
+            <input type="checkbox" name="Type" value="Comment"> Share a comment about how our accessibility features
+            helped you or others<br>
+
+            <h3>Satisfaction</h3>
+            <p>How satisfied are you with the accessibility features we provide?</p>
+            <input type="radio" name="Satisfaction" value="5 - Very Satisfied"> 5 - Very Satisfied<br>
+            <input type="radio" name="Satisfaction" value="4"> 4<br>
+            <input type="radio" name="Satisfaction" value="3"> 3<br>
+            <input type="radio" name="Satisfaction" value="2"> 2<br>
+            <input type="radio" name="Satisfaction" value="1"> 1<br>
+            <input type="radio" name="Satisfaction" value="0 - Very Dissatisfied"> 0 - Very Dissatisfied<br>
+
+            <h3>Improvements</h3>
+            <p>Please enter any feedback you have to help us provide better service:<br>
+                <textarea name="Feedback" rows="5" cols="60"></textarea>
+            </p><br>
+
+            <h3>Contact Details (Optional)</h3>
+            Name: <input type="text" name="FirstName"><br>
+            Email Address: <input type="email" name="EmailAddress"><br>
+
+            <input type="submit" value="Submit">
+        </form>
+    </main>
+
+    <footer>
+        <!-- Citation for image used on the page -->
+        <p style="text-align:center;">Renma, Cris (2016). [Untitled photograph of different disabilities]. Retrieved
+            from <a href="https://pixabay.com/en/accessibility-disability-1682903/">Pixabay</a></p>
+    </footer>
+
+    <!-- 
+      Validation & Accessibility Notes:
+      - Fixed incorrect heading closing tags (<h1> and <h3>).
+      - Corrected table header tags (<th> instead of <td>).
+      - Fixed broken HTML comment syntax in footer.
+      - Added alt text for image for accessibility.
+      - Replaced dummy text with real accessibility statement.
+      - You still need to fill in the table rows with descriptions, barriers, and POUR principles.
+    -->
+</body>
+</html>
