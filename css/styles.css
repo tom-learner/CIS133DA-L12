@@ -1,63 +1,151 @@
-< !-- Author: Course: Lesson: -->body {
-    bg-color: #eee;
-    font-family: Ariel, sans-serif;
-    font-size: 9px;
-    color: #7af0ff;
+/*
+    Author: WEI2143613
+    Course: CIS133DA
+    Section: 31862
+    Lesson: 12
+*/
+
+body {
+    background-color: #eee;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #333;
+    margin: 0;
+    padding: 0;
 }
 
-header width: 80%;
-padding: 20px 0px;
-margin: 0 auto;
-text-align: center;
+header {
+    width: 80%;
+    padding: 20px 0;
+    margin: 0 auto;
+    text-align: center;
 }
 
 main {
     width: 80%;
-    padding: 30px 0px;
+    padding: 30px 0;
     margin: 0 auto;
 }
 
 nav a {
     margin: 10px;
-    padding: 2px;
-    background-color: #FFFF00;
-    color: #9D85FF;
+    padding: 10px;
+    background-color: #185f80;
+    color: #fff;
     text-decoration: none;
+    border-radius: 5px;
 }
 
-h1,
-h2,
-h3 {
+nav a:hover {
+    background-color: #133567;
+}
+
+h1, h2, h3 {
     font-family: Georgia, serif;
+    color: #185f80;
 }
 
 img {
     display: block;
-    margin: auto;
+    margin: 20px auto;
     width: 300px;
+    border: 2px solid #185f80;
+    border-radius: 5px;
 }
 
 table {
-    & width: 100%;
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
 }
 
-table,
-th,
-td {
-    border: 1px solid #FFF;
-    background-color: #FFFF00 border-collapse: collapse;
+table, th, td {
+    border: 1px solid #ccc;
+}
+
+th, td {
     padding: 10px;
+    text-align: left;
 }
 
 th {
     background-color: #185f80;
+    color: #fff;
 }
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+fieldset {
+    border: 1px solid #185f80;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 20px 0;
+}
+
+legend {
+    font-weight: bold;
+    color: #185f80;
+}
+
+label {
+    display: inline-block;
+    margin: 5px 0;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0 15px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    background-color: #185f80;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+input[type="submit"]:hover {
+    background-color: #133567;
 }
 
 footer {
     width: 80%;
-    margin: auto;
+    margin: 30px auto;
     text-align: center;
     background-color: #185f80;
+    color: white;
     padding: 20px;
+    border-radius: 5px;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+    
+    header, main, footer {
+        width: 95%;
+    }
+    
+    table {
+        display: block;
+        overflow-x: auto;
+    }
 }
